@@ -1,9 +1,120 @@
-\placeholder{Рабочая формула №1:
+\begin{center}
+    \textbf{Исходные данные}
+\end{center}
+
+\begin{flushleft}
+    $\text{Масса каретки} \hspace{4.95cm} (47,0 \pm 0,5)\text{г}$ \\
+    $\text{Масса шайбы} \hspace{5.2cm} (220,0 \pm 0,5)\text{г}$ \\
+    $\text{Масса грузов на крестовине} \hspace{2.45cm} (408,0 \pm 0,5)\text{г}$ \\
+    $\text{Расстояние первой риски от оси} \hspace{1.7cm} (57,0 \pm 0,5)\text{мм}$ \\
+    $\text{Расстояние между рисками} \hspace{2.55cm} (25,0 \pm 0,2)\text{мм}$ \\
+    $\text{Диаметр ступицы} \hspace{4.35cm} (46,0 \pm 0,5)\text{мм}$ \\
+    $\text{Диаметр груза на крестовине} \hspace{2.15cm} (40,0 \pm 0,5)\text{мм}$ \\
+    $\text{Высота груза на крестовине} \hspace{2.4cm} (40,0 \pm 0,5)\text{мм}$ \\
+\end{flushleft}
+
+\begin{center}
+    \textbf{Рабочие формулы}
+\end{center}
+
+\text{Ускорение груза}
 \[
-\vec{F} = m\vec{a}
+a = \frac{2h}{t^2}
+\]
+Где:
+\[
+\text{$h$ - расстояние, пройденное грузом за время $t$ от начала движения}
 \]
 
-Рабочая формула №2:
+\text{Связь между угловым ускорением и линейным ускорением груза} 
 \[
-E = mc^2
-\]}
+\varepsilon = \frac{2a}{d} = \frac{4h}{t^2d}
+\]
+Где:
+\[
+\text{$d$ — диаметр ступицы}
+\]
+
+\text{Момент силы натяжения нити}
+\[
+M = \frac{m d}{2} \left(g - a \right) = \frac{m d}{2} \left(g - \frac{2 h}{t^2} \right)
+\]
+
+\text{Основной закон динамики вращения}
+\[
+I \varepsilon = M - M_{\text{тр}}
+\]
+Где:
+\begin{center}
+    \text{$I$ — момент инерции крестовины} \\
+    \text{$\varepsilon$ — угловое ускорение крестовины} \\
+    \text{$M$ и $M_{\text{тр}}$ — моменты сил натяжения нити и трения на крестовине} \\
+\end{center}
+
+\begin{center}
+    \text{В соответствии с теоремой Штейнера момент инерции крестовины зависит от расстояния} 
+    \text{между центрами грузов и осью вращения по формуле}
+\end{center} 
+\[
+I = I_0 + 4 m_{\text{ут}} R^2
+\]
+Где:
+\begin{center}
+    \text{$I_0$ - сумма моментов инерции стрежней крестовины, момента инерции ступицы} 
+    \text{и собственных центральных моментов инерции утяжелителей}
+\end{center}
+
+\text{Момент инерции крестовины с утяжелителями по МНК} 
+\[
+I = \frac{\sum_{i=1}^{N} \left( \varepsilon_i - \overline{\varepsilon} \right) \left( M_i - \overline{M} \right)}{\sum_{i=1}^{N} \left( \varepsilon_i - \overline{\varepsilon} \right)^2}
+\]
+
+\text{Расстояние от оси крестовины до грузов-утяжелителей}: 
+\[
+R = l_1 + \left( n - 1 \right) l_0 + \frac{b}{2}
+\]
+
+Где:
+\begin{center}
+    \text{$l_1$ – расстояние от оси вращения до первой риски} \\
+    \text{$n$ – номер риски, на которой установлены утяжелители} \\
+    \text{$l_0$ – расстояние между соседним рисками} \\
+    \text{$b$ – размер утяжелителя вдоль спицы} \\
+\end{center}
+
+\text{Момент инерции крестовины по т. Штейнера}
+\[
+I_0 = \overline{I} - 4m_{\text{ут}}\overline{R}^2
+\]
+Где:
+\[
+m_\text{ут} = \frac{\sum_{i=1}^{N} \left( R_i - \overline{R} \right) \left( I_i - \overline{I} \right)}{4\sum_{i=1}^{N} \left( R_i - \overline{R} \right)^2}
+\]
+
+\[
+\Delta m_{\text{ут}} = \frac{2 \cdot \sqrt{\frac{\sum_{i=1}^{N} \left( I_i - \left( I_0 + 4 m_{\text{ут}} R_i^2 \right) \right)^2}{(N - 2) \sum_{i=1}^{N} \left( R_i^2 - \bar{R}^2 \right)}}}{4} \quad \quad \Delta I_0 = 2 \cdot \sqrt{\left( \frac{1}{N} + \frac{\overline{R}^2}{\sum_{i=1}^{N} \left( R_i^2 - \overline{R}^2 \right)^2} \right) \cdot \frac{\sum_{i=1}^{N} \left( I_i - \left( I_0 + 4 m_{\text{ут}} R_i^2 \right) \right)^2}{N-2}}
+\]
+
+\text{Абсолютная погрешность с учетом погрешности приборов}: 
+\[
+\Delta x = \sqrt{\left( \overline{\Delta x} \right)^2 + \left( \frac{2}{3} \Delta_{\text{ux}} \right)^2}
+\]
+Где:
+\begin{center}
+    \text{$\Delta_{\text{ux}}$ — погрешность прибора}
+    \text{$\overline{\Delta x}$ — случайная погрешность (доверительный интервал)}
+\end{center}
+
+\text{Погрешность косвенного значения}: 
+\[
+\Delta z = \sqrt{\left( \frac{\partial z}{\partial x_1} \Delta x_1 \right)^2 + \left( \frac{\partial z}{\partial x_2} \Delta x_2 \right)^2}
+\]
+Где:
+\[
+z = f(x_1, x_2)
+\]
+
+\text{Относительная погрешность}: 
+\[
+\varepsilon_x = \frac{\Delta x}{\overline{x}} \cdot 100\%
+\]
