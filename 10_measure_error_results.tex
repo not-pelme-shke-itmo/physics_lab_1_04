@@ -1,7 +1,7 @@
 \begin{enumerate}
     \item Произведем расчет погрешности величин среднего времени падения, ускорения груза, углового ускорения крестовины и момента силы натяжения ниты для массы груза $m_1$ и первой риски:
 
-    $\displaystyle \Delta_t = \sqrt{\frac{\sum (t_i - \overline{t})^2}{n(n - 1)} + (\frac{2}{3}\Delta_{\text{и}t})^2} = 0.14$
+    $\displaystyle \Delta_t = \sqrt{\frac{\sum_{i = 1}^n (t_i - \overline{t})^2}{3 \cdot 2} + (\frac{2}{3}\Delta_{\text{и}t})^2} = 0.14$
 
     $\displaystyle \varepsilon_t = \frac{\Delta_t}{\overline{t}} \cdot 100\% = 2.91\%$
 
@@ -32,6 +32,49 @@
         $M = (0.060 \pm 0.001) \ \text{Н} \cdot \text{м}$ & $\varepsilon = 2.17\%$ & $\alpha = 0.95$ \\
     \end{tabular}
 
-    \item Произведем расчет погрешности для $ $
+    \smallvspace
+
+    \item Произведем расчет погрешности величин момента силы трения и момента инерции для утяжелителей на 1 риске, 
+    полученных в ходе применения метода наименьших квадратов:
+
+    $\displaystyle \Delta_I = 2 S_I = 2\sqrt{\frac{1}{D} \frac{\sum_{i = 1}^n d_i}{4 - 2}} = 4.67 \cdot 10^{-4}$
+
+    $\displaystyle \varepsilon_I = \frac{\Delta_I}{I} \cdot 100\% = 2.25\%$
+
+    $\displaystyle \Delta_{M_\text{тр}} = 2S_{M_\text{тр}} = 2\sqrt{\left(\frac{1}{n} + \frac{\overline{\varepsilon}^2}{D}\right) \frac{\sum_{i = 1}^n d_i}{4}} = 12.13 \cdot 10^{-4}$
+
+    $\displaystyle \varepsilon_{M_\text{тр}} = \frac{\Delta_{M_\text{тр}}}{{M_\text{тр}}} \cdot 100\% = 20.12\%$
+
+    Получаем доверительные интервалы для первой риски:
+
+    \begin{tabular}{lll}
+        $I = (207.62 \cdot 10^{-4} \pm 4.67 \cdot 10^{-4}) \ \text{кг} \cdot \text{м}^2$ & $\varepsilon = 2.25\%$ & $\alpha = 0.95$ \\
+
+        $M_\text{тр} = (60.31 \cdot 10^{-4} \pm 12.13 \cdot 10^{-4}) \ \text{Н} \cdot \text{м}$ & $\varepsilon = 20.12\%$ & $\alpha = 0.95$ \\
+    \end{tabular}
+
+    \smallvspace
+
+    \item Произведем расчет погрешности момента инерции стержней крестовин и массы утяжелителей:
+
+    $\displaystyle \Delta_{4m_\text{ут}} = 2 S_{4m_\text{ут}} = 2\sqrt{\frac{1}{D} \frac{\sum_{i = 1}^n d_i}{6 - 2}} = 0.158$
+
+    $\displaystyle \varepsilon_{4m_\text{ут}} = \frac{\Delta_{4m_\text{ут}}}{4m_\text{ут}} \cdot 100\% = 8.40\%$
+
+    $\displaystyle \Delta_{I_0} = 2S_{{I_0}} = 2\sqrt{\left(\frac{1}{n} + \frac{\overline{R^2}^2}{D}\right) \frac{\sum_{i = 1}^n d_i}{4}} = 0.0038$
+
+    $\displaystyle \varepsilon_{I_0} = \frac{\Delta_{I_0}}{I_0} \cdot 100\% = 41.59\%$
+
+    Получаем доверительные интервалы:
+
+    \begin{tabular}{lll}
+        $4m_{ут} = (1.882 \pm 0.158) \ \text{кг}$ & $\varepsilon = 8.40\%$ & $\alpha = 0.95$ \\
+
+        $I_0 = (0.00929 \pm 0.00387) \ \text{кг} \cdot \text{м}^2$ & $\varepsilon = 41.59\%$ & $\alpha = 0.95$ \\
+    \end{tabular}
+
+    \smallvspace
+
+
 
 \end{enumerate}
