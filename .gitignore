@@ -2,3 +2,7 @@
 .vs/
 auxil/
 out/
+
+*.aux
+*.log
+*.pdf
