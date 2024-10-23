@@ -1,5 +1,37 @@
 \begin{enumerate}
-    \item \placeholder{Увлекательная погрешность: $\Delta = 0.4$}
-    \item \placeholder{Занимательное отклонение: $\sigma = 4.5$}
+    \item Произведем расчет погрешности величин среднего времени падения, ускорения груза, углового ускорения крестовины и момента силы натяжения ниты для массы груза $m_1$ и первой риски:
+
+    $\displaystyle \Delta_t = \sqrt{\frac{\sum (t_i - \overline{t})^2}{n(n - 1)} + (\frac{2}{3}\Delta_{\text{и}t})^2} = 0.14$
+
+    $\displaystyle \varepsilon_t = \frac{\Delta_t}{\overline{t}} \cdot 100\% = 2.91\%$
+
+    $\displaystyle \Delta_a = \sqrt{\left(\frac{\partial a}{\partial h}\Delta_h\right)^2 + \left(\frac{\partial a}{\partial t} \Delta_t\right)^2} = 
+    \sqrt{\Delta_h^2 + \left(-2\frac{\overline{h}}{\overline{t}^3} \Delta_t\right)^2} = \sqrt{0.001^2 + \left(-2\frac{0.7}{4.85}\right)^2} = 0.003$
+
+    $\displaystyle \varepsilon_a = \frac{\Delta_a}{a} \cdot 100\% = 5.1\%$
+
+    $\displaystyle \Delta_\varepsilon = \sqrt{\left(\frac{\partial \varepsilon}{\partial a}\Delta_a\right)^2 + \left(\frac{\partial \varepsilon}{\partial d}\Delta_d\right)^2} = 
+    \sqrt{\left(\frac{2}{d}\Delta_a\right)^2 + \left(-\frac{2a}{d^2}\Delta_d\right)^2} = 0.14$
+
+    $\displaystyle \varepsilon_\varepsilon = \frac{\Delta_\varepsilon}{\varepsilon} \cdot 100\% = 5.25\%$
+
+    $\displaystyle \Delta_M = \sqrt{\left(\frac{\partial M}{\partial m}\Delta_m\right)^2 + \left(\frac{\partial M}{\partial d}\Delta_d\right)^2 + \left(\frac{\partial M}{\partial a}\Delta_a\right)^2} = 
+    \sqrt{\left(\frac{d(g - a)}{2}\Delta_m\right)^2 + \left(\frac{m(g - a)}{2}\Delta_d\right)^2 + \left(\frac{md}{2}\Delta_a\right)^2} = \\ = 0.001$
+
+    $\displaystyle \varepsilon_M = \frac{\Delta_M}{M} \cdot 100\% = 2.17\%$
+
+    Получаем доверительные интервалы для массы груза $m_1$ и первой риски:
+
+    \begin{tabular}{lll}
+        $t_\text{ср} = (4.85 \pm 0.14) \ \text{c}$ & $\varepsilon = 2.91\%$ & $\alpha = 0.95$ \\
+
+        $a = (0.059 \pm 0.003) \ \frac{\text{м}}{\text{с}^2}$ & $\varepsilon = 5.1\%$ & $\alpha = 0.95$ \\
+
+        $\varepsilon = (2.58 \pm 0.14) \ \frac{\text{рад}}{\text{с}^2}$ & $\varepsilon = 5.25\%$ & $\alpha = 0.95$ \\
+
+        $M = (0.060 \pm 0.001) \ \text{Н} \cdot \text{м}$ & $\varepsilon = 2.17\%$ & $\alpha = 0.95$ \\
+    \end{tabular}
+
+    \item Произведем расчет погрешности для $ $
 
 \end{enumerate}
